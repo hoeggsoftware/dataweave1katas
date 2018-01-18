@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+   <person>
+      <firstName>Pablo</firstName>
+      <lastName>Picasso</lastName>
+      <state>TX</state>
+   </person>
+   <person>
+      <firstName>Jessie</firstName>
+      <lastName>James</lastName>
+      <state>MO</state>
+   </person>
+</people>

@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/mock http://www.mulesoft.org/schema/mule/moc
     <spring:beans>
         <spring:import resource="classpath:exercise1.xml"/>
     </spring:beans>
-    <munit:test name="excercise1Flowtest" description="Test">
+    <munit:test name="excercise1Flowtest" description="Test" ignore="true">
         <mock:spy messageProcessor="dw:transform-message" doc:name="Spy">
             <mock:with-attributes>
                 <mock:with-attribute name="doc:name" whereValue="#['Hello, World!']"/>

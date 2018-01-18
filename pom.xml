@@ -56,7 +56,7 @@
 					</execution>
 				</executions>
 			</plugin>
-		<plugin>
+			<plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
                 <artifactId>munit-maven-plugin</artifactId>
                 <version>${munit.version}</version>
@@ -79,11 +79,11 @@
                 </configuration>
             </plugin>
         </plugins>
-	<testResources>
+		<testResources>
             <testResource>
                 <directory>src/test/munit</directory>
             </testResource>
-        <testResource>
+        	<testResource>
                 <directory>src/test/resources</directory>
             </testResource>
         </testResources>
@@ -149,6 +149,18 @@
 			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+	        <groupId>com.mulesoft.weave</groupId>
+	        <artifactId>mule-plugin-weave</artifactId>
+	        <version>${mule.version}</version>
+	        <scope>provided</scope>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.mule.modules</groupId>
+	        <artifactId>mule-module-spring-config</artifactId>
+	        <version>${mule.version}</version>
+	        <scope>provided</scope>
+	    </dependency>
 		<!-- for testing -->
 		<dependency>
 			<groupId>org.mule.tests</groupId>
@@ -156,24 +168,41 @@
 			<version>${mule.version}</version>
 			<scope>test</scope>
 		</dependency>
-	<dependency>
+		<dependency>
             <groupId>com.mulesoft.munit</groupId>
             <artifactId>mule-munit-support</artifactId>
             <version>${mule.munit.support.version}</version>
             <scope>test</scope>
         </dependency>
-    <dependency>
+    	<dependency>
             <groupId>com.mulesoft.munit</groupId>
             <artifactId>munit-runner</artifactId>
             <version>${munit.version}</version>
             <scope>test</scope>
         </dependency>
-    <dependency>
-            <groupId>com.mulesoft.weave</groupId>
-            <artifactId>mule-plugin-weave</artifactId>
-            <version>${mule.version}</version>
-            <scope>provided</scope>
-        </dependency>
+    	<dependency>
+		    <groupId>net.javacrumbs.json-unit</groupId>
+		    <artifactId>json-unit</artifactId>
+		    <version>1.28.1</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.xmlunit</groupId>
+		    <artifactId>xmlunit-core</artifactId>
+		    <version>2.5.1</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.xmlunit</groupId>
+		    <artifactId>xmlunit-matchers</artifactId>
+		    <version>2.5.1</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>de.codecentric.mule.modules</groupId>
+			  <artifactId>assert-object-equals-connector</artifactId>
+			  <version>0.0.6</version>
+		</dependency>
     </dependencies>
 
 	<repositories>

@@ -44,3 +44,6 @@ local.properties
 # --------------- #
 target/
 .mule/
+
+#mac os speecific
+.Ds_Store

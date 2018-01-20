@@ -47,3 +47,4 @@ target/
 
 #mac os speecific
 .Ds_Store
+catalog/*

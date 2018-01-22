@@ -1,4 +1,6 @@
 # dataweave1katas
+https://docs.mulesoft.com/mule-user-guide/v/3.9/dataweave-operators
+
 ## Exercise 1
 say Hello, World!
 
@@ -35,3 +37,9 @@ See src/test/resources/output/exercise5-out.json for expected output.
 Given the src/test/resources/input/national_championship.xml, reorder output by team, last name, and first name.
 
 See src/test/resources/output/exercise6-out.json for expected output.
+
+## Exercise 7
+
+Given the src/test/resources/input/national_championship.xml, produce output as json that groups fans of the same team together, then sorts by the fans by last name, then first name.
+
+See src/test/resources/output/exercise7-out.json for expected output.

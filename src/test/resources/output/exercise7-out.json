@@ -1,0 +1,160 @@
+{
+  "Alabama": [
+    {
+      "id": "e6ace343-297d-4c9b-92da-112f74b4b301",
+      "firstName": "Corbin",
+      "lastName": "Garcia",
+      "fanOf": "Alabama",
+      "age": "81.9",
+      "distanceTraveled": {
+        "distance": "19177",
+        "unitOfMeasure": "mi"
+      }
+    },
+    {
+      "id": "018dbeb0-1b0f-42a8-aa25-2633b7ee5559",
+      "firstName": "Case",
+      "lastName": "Hendrix",
+      "fanOf": "Alabama",
+      "age": "23.5",
+      "distanceTraveled": {
+        "distance": "29937",
+        "unitOfMeasure": "mi"
+      }
+    },
+    {
+      "id": "fc0db8bd-f275-4af2-b4bd-dc6cb2a49e86",
+      "firstName": "Kendrick",
+      "lastName": "Justice",
+      "fanOf": "Alabama",
+      "age": "95.3",
+      "distanceTraveled": {
+        "distance": "28300",
+        "unitOfMeasure": "km"
+      }
+    },
+    {
+      "id": "56d8d60a-3b37-4fae-a3a8-0dc0e91d8c8e",
+      "firstName": "Elvis",
+      "lastName": "Larson",
+      "fanOf": "Alabama",
+      "age": "76.4",
+      "distanceTraveled": {
+        "distance": "16120",
+        "unitOfMeasure": "km"
+      }
+    },
+    {
+      "id": "46502638-1d11-489e-9d2f-caf8e7a0e574",
+      "firstName": "Justice",
+      "lastName": "Love",
+      "fanOf": "Alabama",
+      "age": "36.0",
+      "distanceTraveled": {
+        "distance": "23071",
+        "unitOfMeasure": "mi"
+      }
+    },
+    {
+      "id": "76d58fb6-3fd5-4fae-8733-3d8140c3cf78",
+      "firstName": "Jayden",
+      "lastName": "Lowe",
+      "fanOf": "Alabama",
+      "age": "9.8",
+      "distanceTraveled": {
+        "distance": "20291",
+        "unitOfMeasure": "km"
+      }
+    },
+    {
+      "id": "caba401d-6e9e-4be8-8043-d26cb58b4190",
+      "firstName": "Dane",
+      "lastName": "Parker",
+      "fanOf": "Alabama",
+      "age": "117.3",
+      "distanceTraveled": {
+        "distance": "2427",
+        "unitOfMeasure": "mi"
+      }
+    },
+    {
+      "id": "712abf14-582e-4edf-9f6c-1fa8c0335efa",
+      "firstName": "Keith",
+      "lastName": "Pittman",
+      "fanOf": "Alabama",
+      "age": "41.3",
+      "distanceTraveled": {
+        "distance": "29264",
+        "unitOfMeasure": "km"
+      }
+    }
+  ],
+  "Georgia": [
+    {
+      "id": "25ad0de1-8ab8-4ac4-b66f-12ef126cab71",
+      "firstName": "Jimena",
+      "lastName": "Buck",
+      "fanOf": "Georgia",
+      "age": "110.6",
+      "distanceTraveled": {
+        "distance": "10361",
+        "unitOfMeasure": "km"
+      }
+    },
+    {
+      "id": "00654635-253f-439d-b8b3-514dfa28a021",
+      "firstName": "Mollie",
+      "lastName": "Conrad",
+      "fanOf": "Georgia",
+      "age": "18.4",
+      "distanceTraveled": {
+        "distance": "23294",
+        "unitOfMeasure": "mi"
+      }
+    },
+    {
+      "id": "5f9e2c46-0dd1-461d-b348-7ceeedea2855",
+      "firstName": "Amya",
+      "lastName": "Mckenzie",
+      "fanOf": "Georgia",
+      "age": "85.0",
+      "distanceTraveled": {
+        "distance": "21629",
+        "unitOfMeasure": "mi"
+      }
+    },
+    {
+      "id": "da12fcac-c6e1-4585-8127-af092f8c9db0",
+      "firstName": "Hattie",
+      "lastName": "Olson",
+      "fanOf": "Georgia",
+      "age": "74.2",
+      "distanceTraveled": {
+        "distance": "5462",
+        "unitOfMeasure": "mi"
+      }
+    },
+    {
+      "id": "e50088ef-7c4a-4903-8318-70ec50990597",
+      "firstName": "Ann",
+      "lastName": "Parks",
+      "fanOf": "Georgia",
+      "age": "18.2",
+      "distanceTraveled": {
+        "distance": "29679",
+        "unitOfMeasure": "mi"
+      }
+    },
+    {
+      "id": "15452ae2-beda-4aa1-8203-12bfd02b37a3",
+      "firstName": "Brenden",
+      "lastName": "Pugh",
+      "fanOf": "Georgia",
+      "age": "73.9",
+      "distanceTraveled": {
+        "distance": "16606",
+        "unitOfMeasure": "mi"
+      }
+    }
+  ]
+}

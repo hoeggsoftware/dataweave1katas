@@ -1,0 +1,180 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "Alabama": {
+      "$id": "/properties/Alabama",
+      "type": "array",
+      "items": {
+        "$id": "/properties/Alabama/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/Alabama/items/properties/id",
+            "type": "string",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "25ad0de1-8ab8-4ac4-b66f-12ef126cab71"
+            ]
+          },
+          "firstName": {
+            "$id": "/properties/Alabama/items/properties/firstName",
+            "type": "string",
+            "title": "The Firstname Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Jimena"
+            ]
+          },
+          "lastName": {
+            "$id": "/properties/Alabama/items/properties/lastName",
+            "type": "string",
+            "title": "The Lastname Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Buck"
+            ]
+          },
+          "fanOf": {
+            "$id": "/properties/Alabama/items/properties/fanOf",
+            "type": "string",
+            "title": "The Fanof Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Georgia"
+            ]
+          },
+          "age": {
+            "$id": "/properties/Alabama/items/properties/age",
+            "type": "string",
+            "title": "The Age Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "110.6"
+            ]
+          },
+          "distanceTraveled": {
+            "$id": "/properties/Alabama/items/properties/distanceTraveled",
+            "type": "object",
+            "properties": {
+              "distance": {
+                "$id": "/properties/Alabama/items/properties/distanceTraveled/properties/distance",
+                "type": "string",
+                "title": "The Distance Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "10361"
+                ]
+              },
+              "unitOfMeasure": {
+                "$id": "/properties/Alabama/items/properties/distanceTraveled/properties/unitOfMeasure",
+                "type": "string",
+                "title": "The Unitofmeasure Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "km"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "Georgia": {
+      "$id": "/properties/Georgia",
+      "type": "array",
+      "items": {
+        "$id": "/properties/Georgia/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/Georgia/items/properties/id",
+            "type": "string",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "5f9e2c46-0dd1-461d-b348-7ceeedea2855"
+            ]
+          },
+          "firstName": {
+            "$id": "/properties/Georgia/items/properties/firstName",
+            "type": "string",
+            "title": "The Firstname Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Amya"
+            ]
+          },
+          "lastName": {
+            "$id": "/properties/Georgia/items/properties/lastName",
+            "type": "string",
+            "title": "The Lastname Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Mckenzie"
+            ]
+          },
+          "fanOf": {
+            "$id": "/properties/Georgia/items/properties/fanOf",
+            "type": "string",
+            "title": "The Fanof Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Georgia"
+            ]
+          },
+          "age": {
+            "$id": "/properties/Georgia/items/properties/age",
+            "type": "string",
+            "title": "The Age Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "85.0"
+            ]
+          },
+          "distanceTraveled": {
+            "$id": "/properties/Georgia/items/properties/distanceTraveled",
+            "type": "object",
+            "properties": {
+              "distance": {
+                "$id": "/properties/Georgia/items/properties/distanceTraveled/properties/distance",
+                "type": "string",
+                "title": "The Distance Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "21629"
+                ]
+              },
+              "unitOfMeasure": {
+                "$id": "/properties/Georgia/items/properties/distanceTraveled/properties/unitOfMeasure",
+                "type": "string",
+                "title": "The Unitofmeasure Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "mi"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

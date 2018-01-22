@@ -1,0 +1,64 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "metrics": {
+      "$id": "/properties/metrics",
+      "type": "object",
+      "properties": {
+        "totalAge": {
+          "$id": "/properties/metrics/properties/totalAge",
+          "type": "integer",
+          "title": "The Totalage Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1203
+          ]
+        },
+        "avgAgeInt": {
+          "$id": "/properties/metrics/properties/avgAgeInt",
+          "type": "integer",
+          "title": "The Avgageint Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            38
+          ]
+        },
+        "avgAgeFloat": {
+          "$id": "/properties/metrics/properties/avgAgeFloat",
+          "type": "number",
+          "title": "The Avgagefloat Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            37.5
+          ]
+        },
+        "oldest": {
+          "$id": "/properties/metrics/properties/oldest",
+          "type": "number",
+          "title": "The Oldest Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            117.30000305175781
+          ]
+        },
+        "youngest": {
+          "$id": "/properties/metrics/properties/youngest",
+          "type": "number",
+          "title": "The Youngest Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            9.800000190734863
+          ]
+        }
+      }
+    }
+  }
+}

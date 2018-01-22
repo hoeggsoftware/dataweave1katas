@@ -1,93 +1,45 @@
 {
   "$id": "http://example.com/example.json",
-  "type": "object",
+  "type": "array",
   "definitions": {},
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "properties": {
-    "metrics": {
-      "$id": "/properties/metrics",
-      "type": "object",
-      "properties": {
-        "totalAge": {
-          "$id": "/properties/metrics/properties/totalAge",
-          "type": "integer",
-          "title": "The Totalage Schema",
-          "description": "An explanation about the purpose of this instance.",
-          "default": 0,
-          "examples": [
-            1203
-          ]
-        },
-        "avgAgeInt": {
-          "$id": "/properties/metrics/properties/avgAgeInt",
-          "type": "integer",
-          "title": "The Avgageint Schema",
-          "description": "An explanation about the purpose of this instance.",
-          "default": 0,
-          "examples": [
-            38
-          ]
-        },
-        "avgAgeFloat": {
-          "$id": "/properties/metrics/properties/avgAgeFloat",
-          "type": "number",
-          "title": "The Avgagefloat Schema",
-          "description": "An explanation about the purpose of this instance.",
-          "default": 0,
-          "examples": [
-            37.5
-          ]
-        },
-        "oldest": {
-          "$id": "/properties/metrics/properties/oldest",
-          "type": "object",
-          "properties": {
-            "id": {
-              "$id": "/properties/metrics/properties/oldest/properties/id",
-              "type": "string",
-              "title": "The Id Schema",
-              "description": "An explanation about the purpose of this instance.",
-              "default": "",
-              "examples": [
-                "25ad0de1-8ab8-4ac4-b66f-12ef126cab71"
-              ]
-            },
-            "age": {
-              "$id": "/properties/metrics/properties/oldest/properties/age",
-              "type": "string",
-              "title": "The Age Schema",
-              "description": "An explanation about the purpose of this instance.",
-              "default": "",
-              "examples": [
-                "117.3"
-              ]
-            }
-          }
-        },
-        "youngest": {
-          "$id": "/properties/metrics/properties/youngest",
-          "type": "object",
-          "properties": {
-            "id": {
-              "$id": "/properties/metrics/properties/youngest/properties/id",
-              "type": "string",
-              "title": "The Id Schema",
-              "description": "An explanation about the purpose of this instance.",
-              "default": "",
-              "examples": [
-                "76d58fb6-3fd5-4fae-8733-3d8140c3cf78"
-              ]
-            },
-            "age": {
-              "$id": "/properties/metrics/properties/youngest/properties/age",
-              "type": "string",
-              "title": "The Age Schema",
-              "description": "An explanation about the purpose of this instance.",
-              "default": "",
-              "examples": [
-                "9.8"
-              ]
-            }
+  "items": {
+    "$id": "http://example.com/example.json/items",
+    "type": "object",
+    "properties": {
+      "id": {
+        "$id": "http://example.com/example.json/items/properties/id",
+        "type": "string",
+        "title": "The Id Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": "",
+        "examples": [
+          "caba401d-6e9e-4be8-8043-d26cb58b4190"
+        ]
+      },
+      "distanceTraveled": {
+        "$id": "http://example.com/example.json/items/properties/distanceTraveled",
+        "type": "object",
+        "properties": {
+          "distance": {
+            "$id": "http://example.com/example.json/items/properties/distanceTraveled/properties/distance",
+            "type": "integer",
+            "title": "The Distance Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              2427
+            ]
+          },
+          "unitOfMeasure": {
+            "$id": "http://example.com/example.json/items/properties/distanceTraveled/properties/unitOfMeasure",
+            "type": "string",
+            "title": "The Unitofmeasure Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "km"
+            ]
           }
         }
       }

@@ -1,9 +1,100 @@
-{
-  "metrics": {
-    "totalAge": 861.8,
-    "avgAgeInt": 62,
-    "avgAgeFloat": 61.6,
-    "oldest": 117.3,
-    "youngest": 9.8
+[
+  {
+    "id": "caba401d-6e9e-4be8-8043-d26cb58b4190",
+    "distanceTraveled": {
+      "distance": 2427,
+      "unitOfMeasure": "mi"
+    }
+  },
+  {
+    "id": "da12fcac-c6e1-4585-8127-af092f8c9db0",
+    "distanceTraveled": {
+      "distance": 5462,
+      "unitOfMeasure": "mi"
+    }
+  },
+  {
+    "id": "25ad0de1-8ab8-4ac4-b66f-12ef126cab71",
+    "distanceTraveled": {
+      "distance": 10361,
+      "unitOfMeasure": "km"
+    }
+  },
+  {
+    "id": "56d8d60a-3b37-4fae-a3a8-0dc0e91d8c8e",
+    "distanceTraveled": {
+      "distance": 16120,
+      "unitOfMeasure": "km"
+    }
+  },
+  {
+    "id": "76d58fb6-3fd5-4fae-8733-3d8140c3cf78",
+    "distanceTraveled": {
+      "distance": 20291,
+      "unitOfMeasure": "km"
+    }
+  },
+  {
+    "id": "15452ae2-beda-4aa1-8203-12bfd02b37a3",
+    "distanceTraveled": {
+      "distance": 16606,
+      "unitOfMeasure": "mi"
+    }
+  },
+  {
+    "id": "fc0db8bd-f275-4af2-b4bd-dc6cb2a49e86",
+    "distanceTraveled": {
+      "distance": 28300,
+      "unitOfMeasure": "km"
+    }
+  },
+  {
+    "id": "712abf14-582e-4edf-9f6c-1fa8c0335efa",
+    "distanceTraveled": {
+      "distance": 29264,
+      "unitOfMeasure": "km"
+    }
+  },
+  {
+    "id": "e6ace343-297d-4c9b-92da-112f74b4b301",
+    "distanceTraveled": {
+      "distance": 19177,
+      "unitOfMeasure": "mi"
+    }
+  },
+  {
+    "id": "5f9e2c46-0dd1-461d-b348-7ceeedea2855",
+    "distanceTraveled": {
+      "distance": 21629,
+      "unitOfMeasure": "mi"
+    }
+  },
+  {
+    "id": "46502638-1d11-489e-9d2f-caf8e7a0e574",
+    "distanceTraveled": {
+      "distance": 23071,
+      "unitOfMeasure": "mi"
+    }
+  },
+  {
+    "id": "00654635-253f-439d-b8b3-514dfa28a021",
+    "distanceTraveled": {
+      "distance": 23294,
+      "unitOfMeasure": "mi"
+    }
+  },
+  {
+    "id": "e50088ef-7c4a-4903-8318-70ec50990597",
+    "distanceTraveled": {
+      "distance": 29679,
+      "unitOfMeasure": "mi"
+    }
+  },
+  {
+    "id": "018dbeb0-1b0f-42a8-aa25-2633b7ee5559",
+    "distanceTraveled": {
+      "distance": 29937,
+      "unitOfMeasure": "mi"
+    }
   }
-}
+]

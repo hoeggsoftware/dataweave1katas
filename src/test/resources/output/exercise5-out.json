@@ -1,0 +1,9 @@
+{
+  "metrics": {
+    "totalAge": 861.8,
+    "avgAgeInt": 62,
+    "avgAgeFloat": 61.6,
+    "oldest": 117.3,
+    "youngest": 9.8
+  }
+}

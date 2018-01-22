@@ -15,17 +15,17 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
 http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd">
     <munit:config name="munit" doc:name="MUnit configuration"/>
     <spring:beans>
-        <spring:import resource="classpath:exercise5.xml"/>
+        <spring:import resource="classpath:exercise6.xml"/>
     </spring:beans>
-    <munit:test name="exercise5Test" description="MUnit Test">
+    <munit:test name="exercise6Test" description="MUnit Test">
         <set-payload value="#[getResource('input/national_championship.xml').asStream()]" doc:name="Set Payload" mimeType="application/xml"/>
-        <flow-ref name="exercise5Flow" doc:name="exercise5Flow"/>
+        <flow-ref name="exercise6Flow" doc:name="exercise6Flow"/>
         <mock:verify-call messageProcessor="dw:transform-message" times="1" doc:name="Verify Call">
             <mock:with-attributes>
                 <mock:with-attribute name="doc:name" whereValue="Transform Message"/>
             </mock:with-attributes>
         </mock:verify-call>
-        <assert-object-equals:compare-objects expected-ref="#[getResource('output/exercise5-out.json').asStream()]" doc:name="Assert Object Equals"/>
+        <assert-object-equals:compare-xml expected-ref="#[getResource('output/exercise6-out.xml').asStream()]" doc:name="Assert Object Equals"/>
     </munit:test>
     
 </mule>

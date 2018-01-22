@@ -1,0 +1,32 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "items": {
+    "$id": "http://example.com/example.json/items",
+    "type": "object",
+    "properties": {
+      "name": {
+        "$id": "http://example.com/example.json/items/properties/name",
+        "type": "string",
+        "title": "The Name Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": "",
+        "examples": [
+          "Alabama"
+        ]
+      },
+      "abbreviation": {
+        "$id": "http://example.com/example.json/items/properties/abbreviation",
+        "type": "string",
+        "title": "The Abbreviation Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": "",
+        "examples": [
+          "AL"
+        ]
+      }
+    }
+  }
+}

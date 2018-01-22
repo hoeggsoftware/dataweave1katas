@@ -43,3 +43,29 @@ See src/test/resources/output/exercise6-out.json for expected output.
 Given the src/test/resources/input/national_championship.xml, produce output as json that groups fans of the same team together, then sorts by the fans by last name, then first name.
 
 See src/test/resources/output/exercise7-out.json for expected output.
+
+## Exercise 8
+
+Given the src/test/resources/input/list_of_states.json, produce output as json that removes all directional states (States that start with North, South, East, or West) from the list.
+
+See src/test/resources/output/exercise8-out.json for expected output.
+
+## Exercise 9
+
+Given the src/test/resources/input/list_of_states.json 
+
+* Make the flowVariable abbrToName contain json that maps the abbreviation to the state name. 
+* Make the flowVariable nameToAbbr contain json that maps the state name to the abbreviation.
+* Do not change the payload.
+
+See src/test/resources/output/exercise9-abbr-to-name-out.json for abbrToName flowVars expected output.
+See src/test/resources/output/exercise9-name-to-abbr-out.json for nameToAbbr flowVars expected output.
+
+## Exercise 10
+
+Given the src/test/resources/input/list_of_states.json, produce output as json that contains:
+* abbreviation - All state abbreviations combined together in a comma seperated string.
+* names: - All state names combined together in a comma seperated string.
+
+See src/test/resources/output/exercise10-out.json for expected output.
+

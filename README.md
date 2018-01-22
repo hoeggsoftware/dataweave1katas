@@ -16,6 +16,3 @@ Given the src/test/resources/input/national_championship.xml, produce output as 
 - avgAgeFloat - Average age of all attendees as a Float to nearest tenth
 - oldest - age of the oldest attendee
 - youngest - age of the youngest attendee
-
-%var oldest = payload.people.*person filter ($.age == oldestAge)
-{

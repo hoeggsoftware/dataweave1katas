@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     <sub-flow name="exercise2Flow">
         <dw:transform-message doc:name="json2xmlAndCapitalize" metadata:id="8b2715b6-8a9b-4d1c-a849-d4747a72c6fc">
-            <dw:input-payload mimeType="application/json" doc:sample="input/excercise2-in.json"/>
+            <dw:input-payload mimeType="application/json" doc:sample="input/exercise2-in.json"/>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/xml
 ---

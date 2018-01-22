@@ -10,14 +10,14 @@ http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mul
     <spring:beans>
         <spring:import resource="classpath:exercise2.xml"/>
     </spring:beans>
-    <munit:test name="excercise2Flowtest" description="Test">
-        <set-payload value="#[getResource('input/excercise2-in.json').asStream()]" doc:name="Set Payload"/>
+    <munit:test name="exercise2Flowtest" description="Test">
+        <set-payload value="#[getResource('input/exercise2-in.json').asStream()]" doc:name="Set Payload"/>
         <flow-ref name="exercise2Flow" doc:name="Flow-ref to exercise1Flow"/>
         <mock:verify-call messageProcessor="dw:transform-message" times="1" doc:name="Verify Call">
             <mock:with-attributes>
                 <mock:with-attribute name="doc:name" whereValue="json2xmlAndCapitalize"/>
             </mock:with-attributes>
         </mock:verify-call>
-        <assert-object-equals:compare-xml expected-ref="#[getResource('output/excercise2-out.xml').asStream()]" doc:name="Assert Object Equals"/>
+        <assert-object-equals:compare-xml expected-ref="#[getResource('output/exercise2-out.xml').asStream()]" doc:name="Assert Object Equals"/>
     </munit:test>
 </mule>

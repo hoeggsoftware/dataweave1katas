@@ -15,16 +15,18 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
 http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd">
     <munit:config name="munit" doc:name="MUnit configuration"/>
     <spring:beans>
-        <spring:import resource="classpath:exercise8.xml"/>
+        <spring:import resource="classpath:exercise9.xml"/>
     </spring:beans>
-    <munit:test name="exercise8Test" description="MUnit Test">
+    <munit:test name="exercise9Test" description="MUnit Test">
         <set-payload value="#[getResource('input/list_of_states.json').asStream()]" doc:name="Set Payload" mimeType="application/xml"/>
-        <flow-ref name="exercise8Flow" doc:name="exercise8Flow"/>
+        <flow-ref name="exercise9Flow" doc:name="exercise8Flow"/>
         <mock:verify-call messageProcessor="dw:transform-message" times="1" doc:name="Verify Call">
             <mock:with-attributes>
                 <mock:with-attribute name="doc:name" whereValue="Transform Message"/>
             </mock:with-attributes>
         </mock:verify-call>
-        <assert-object-equals:compare-objects expected-ref="#[getResource('output/exercise8-out.json').asStream()]" doc:name="Assert Object Equals"/>
+      	<!-- <assert-object-equals:compare-objects expected-ref="#[getResource('output/exercise9-abbr-to-name-out.json').asStream()]" doc:name="Assert flowVars.abbrToName Object Equals" actual-ref="#[flowVars.abbrToName]"/>
+       <assert-object-equals:compare-objects expected-ref="#[getResource('output/exercise9-name-to-abbr-out.json').asStream()]" actual-ref="#[flowVars.nameToAbbr]" doc:name="Assert flowVars.nameToAbbr Object Equals"/> -->
+        <assert-object-equals:compare-objects expected-ref="#[getResource('input/list_of_states.json').asStream()]" doc:name="Assert payload Object Equals"/>
     </munit:test>
 </mule>

@@ -6,14 +6,15 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
-    <sub-flow name="exercise8Flow">
+    <sub-flow name="exercise9Flow">
         <dw:transform-message doc:name="Transform Message" metadata:id="121b9e3a-5f0f-4af0-b157-55ca0dfefb9c">
             <dw:input-payload mimeType="application/json" doc:sample="input/list_of_states.json"/>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json
-%var directionalStates = payload filter ($.name matches /(?:North|South|West).*/)
 ---
-payload -- directionalStates]]></dw:set-payload>
+{
+	
+}]]></dw:set-payload>
         </dw:transform-message>
     </sub-flow>
 </mule>

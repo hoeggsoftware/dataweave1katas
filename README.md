@@ -75,7 +75,8 @@ See src/test/resources/output/exercise11-out.json for expected output.
 
 ## Exercise 12
 
-Given src/test/resources/input/potential_anograms.json produce json that contains:
+Given src/test/resources/input/potential_palindromes.json produce json that contains:
+Note: do not consider white space, case, or non alphanumeric characters when determining if something is a palindrome or not.
 * allPalindromes - true or false, identifies if all items in the list are palindromes (same forward or backwards)
 * palindromes - comma seperated string of all palindromes
 * containsNumericPalindromes - true or false, identifies if at least one list entry is a palindrome and is also contains only numerical values
@@ -97,10 +98,11 @@ See src/test/resources/output/exercise13-out.json for expected output.
 
 ## Exercise 14
 
-Take the results of FizzBuzz (Exercise 13) and create two lists, one that is all the odd number entries, and other that is all the even.
+Take the results of FizzBuzz (Exercise 13) and create three lists, one that is all the odd number entries, one that is all the even, and a third that contains all entries that are prime. The prime calculation will be handled by the isPrime flow.
 {
 	"even": [],
-	"odd": []
+	"odd": [],
+	"prime": []
 }
 
 See src/test/resources/output/exercise14-out.json for expected output.
@@ -109,9 +111,7 @@ See src/test/resources/output/exercise14-out.json for expected output.
 
 recombine the results of above into one list Exercise 14
 
-##
-
-Other ideas:
+## Other ideas from our list I don't think are covered yet
 	Hamming
 	Trim whitespace (adjust one of the above?)
 	date coercion

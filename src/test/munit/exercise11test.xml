@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:assert-object-equals="http://www.mulesoft.org/schema/mule/assert-object-equals"
+	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  	xmlns:mock="http://www.mulesoft.org/schema/mule/mock" 
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit"
+	xmlns="http://www.mulesoft.org/schema/mule/core" 
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/assert-object-equals http://www.mulesoft.org/schema/mule/assert-object-equals/current/mule-assert-object-equals.xsd
+http://www.mulesoft.org/schema/mule/mock http://www.mulesoft.org/schema/mule/mock/current/mule-mock.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd">
+    <munit:config name="munit" doc:name="MUnit configuration"/>
+    <spring:beans>
+        <spring:import resource="classpath:exercise11.xml"/>
+    </spring:beans>
+    <munit:test name="exercise11Test" description="MUnit Test">
+        <set-payload value="#[getResource('input/list_of_states_dupes.json').asStream()]" doc:name="Set Payload" mimeType="application/xml"/>
+        <flow-ref name="exercise11Flow" doc:name="exercise11Flow"/>
+        <mock:verify-call messageProcessor="dw:transform-message" times="1" doc:name="Verify Call">
+            <mock:with-attributes>
+                <mock:with-attribute name="doc:name" whereValue="Transform Message"/>
+            </mock:with-attributes>
+        </mock:verify-call>
+        <assert-object-equals:compare-objects expected-ref="#[getResource('output/exercise11-out.json').asStream()]" doc:name="Assert Object Equals"/>
+    </munit:test>
+</mule>

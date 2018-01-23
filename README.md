@@ -52,20 +52,70 @@ See src/test/resources/output/exercise8-out.json for expected output.
 
 ## Exercise 9
 
-Given the src/test/resources/input/list_of_states.json 
-
+Given the src/test/resources/input/list_of_states.json:
 * Make the flowVariable abbrToName contain json that maps the abbreviation to the state name. 
 * Make the flowVariable nameToAbbr contain json that maps the state name to the abbreviation.
 * Do not change the payload.
 
-See src/test/resources/output/exercise9-abbr-to-name-out.json for abbrToName flowVars expected output.
-See src/test/resources/output/exercise9-name-to-abbr-out.json for nameToAbbr flowVars expected output.
+See src/test/resources/output/exercise9-abbr-to-name-out.json for abbrToName flowVars expected output and src/test/resources/output/exercise9-name-to-abbr-out.json for nameToAbbr flowVars expected output.
 
 ## Exercise 10
 
 Given the src/test/resources/input/list_of_states.json, produce output as json that contains:
 * abbreviation - All state abbreviations combined together in a comma seperated string.
-* names: - All state names combined together in a comma seperated string.
+* names - All state names combined together in a comma seperated string.
 
 See src/test/resources/output/exercise10-out.json for expected output.
 
+## Exercise 11
+
+Given src/test/resources/input/list_of_states_dupes.json, remove duplicates and order the results in reverse alphabetical order.
+
+See src/test/resources/output/exercise11-out.json for expected output.
+
+## Exercise 12
+
+Given src/test/resources/input/potential_anograms.json produce json that contains:
+* allPalindromes - true or false, identifies if all items in the list are palindromes (same forward or backwards)
+* palindromes - comma seperated string of all palindromes
+* containsNumericPalindromes - true or false, identifies if at least one list entry is a palindrome and is also contains only numerical values
+* numericPalindromes - pipe, |, seperated string of all palindromes
+
+See src/test/resources/output/exercise12-out.json for expected output.
+
+## Exercise 13
+
+Recreate FizzBuzz, https://en.wikipedia.org/wiki/Fizz_buzz, with dataweave. The output will be a json object where the key is the number, and the value is either the number, Fizz, Buzz, or Fizz Buzz:
+{
+	"1": "1",
+	"2": "2",
+	"3": "Fizz",
+	....
+}
+
+See src/test/resources/output/exercise13-out.json for expected output.
+
+## Exercise 14
+
+Take the results of FizzBuzz (Exercise 13) and create two lists, one that is all the odd number entries, and other that is all the even.
+{
+	"even": [],
+	"odd": []
+}
+
+See src/test/resources/output/exercise14-out.json for expected output.
+
+## Exercise 15
+
+recombine the results of above into one list Exercise 14
+
+##
+
+Other ideas:
+	Hamming
+	Trim whitespace (adjust one of the above?)
+	date coercion
+	flow lookup
+	create and and write a csv
+	zip array
+	split string into an array

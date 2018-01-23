@@ -115,7 +115,8 @@ recombine the results of above into one list Exercise 14
 	Hamming
 	Trim whitespace (adjust one of the above?)
 	date coercion
-	flow lookup
+	MapObject
+	Pluck
 	create and and write a csv
 	zip array
 	split string into an array

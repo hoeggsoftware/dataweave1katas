@@ -7,7 +7,7 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     <sub-flow name="exercise11Flow">
-        <dw:transform-message doc:name="Transform Message">
+        <dw:transform-message doc:name="Transform Message" metadata:id="973f96f3-172f-415b-b7b7-de6e916db522">
             <dw:input-payload mimeType="application/json" doc:sample="input/list_of_states_dupes.json"/>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json

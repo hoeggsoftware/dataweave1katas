@@ -7,13 +7,13 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     <sub-flow name="exercise5Flow">
-        <dw:transform-message doc:name="Transform Message" >
+        <dw:transform-message doc:name="Transform Message" metadata:id="3b5eb765-3272-4317-b8f7-2964eabb186e">
             <dw:input-payload mimeType="application/xml" doc:sample="input/national_championship.xml"/>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json
 ---
 {
-  
+	
 }]]></dw:set-payload>
         </dw:transform-message>
     </sub-flow>

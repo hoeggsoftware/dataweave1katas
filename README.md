@@ -98,18 +98,24 @@ See src/test/resources/output/exercise13-out.json for expected output.
 
 ## Exercise 14
 
-Take the results of FizzBuzz (Exercise 13) and create three lists, one that is all the odd number entries, one that is all the even, and a third that contains all entries that are prime. The prime calculation will be handled by the isPrime flow.
+Take the results of FizzBuzz (Exercise 13) and create three lists, one that is all the odd number entries, one that is all the even, and a third that contains all entries that are prime. The prime calculation will be handled by the isPrime flow, call it from dataweave.
 {
-	"even": [],
-	"odd": [],
-	"prime": []
+	"evens": [],
+	"odds": [],
+	"primes": []
 }
 
 See src/test/resources/output/exercise14-out.json for expected output.
 
 ## Exercise 15
 
-recombine the results of above into one list Exercise 14
+Recombine the results of above Exercise 14, src/test/resources/input/evens_odds_primes.json, into an object that has a key of the number, and a value of the ordinalNumber:
+{
+	"1":"1st",
+	"2":"2nd"
+}
+
+See src/test/resources/output/exercise15-out.json for expected output.
 
 ## Other ideas from our list I don't think are covered yet
 	Hamming

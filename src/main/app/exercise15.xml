@@ -7,22 +7,15 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
 http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd">
-    <sub-flow name="exercise14Flow">
-        <dw:transform-message doc:name="Transform Message" metadata:id="d0a26994-3add-4591-a99c-ff0eef05fd45">
-            <dw:input-payload doc:sample="input/fizz_buzz.json" mimeType="application/json"/>
+    <sub-flow name="exercise15Flow">
+        <dw:transform-message doc:name="Transform Message" metadata:id="17ba66d1-ed3d-46a7-805b-dd070322fdca">
+            <dw:input-payload doc:sample="input/evens_odds_primes.json" mimeType="application/json"/>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json
 ---
 {
-	
+  
 }]]></dw:set-payload>
         </dw:transform-message>
     </sub-flow>
-    <flow name="isPrime">
-        <object-to-string-transformer doc:name="Object to String"/>
-        <scripting:transformer doc:name="Script">
-            <scripting:script engine="Groovy"><![CDATA[bigInt = new java.math.BigInteger(payload);
-bigInt.isProbablePrime(10000);]]></scripting:script>
-        </scripting:transformer>
-    </flow>
 </mule>

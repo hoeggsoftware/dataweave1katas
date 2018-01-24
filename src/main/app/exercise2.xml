@@ -13,15 +13,7 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 %output application/xml
 ---
 {
-	people: {
-		(payload map ((payload01 , indexOfPayload01) -> {
-			person: {
-				firstName: capitalize payload01.firstName,
-				lastName: capitalize payload01.lastName,
-				state: upper payload01.state
-			}
-		}))
-	}
+	
 }]]></dw:set-payload>
         </dw:transform-message>
     </sub-flow>

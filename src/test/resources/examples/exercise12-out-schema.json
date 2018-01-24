@@ -1,0 +1,48 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "palindromes": {
+      "$id": "/properties/palindromes",
+      "type": "string",
+      "title": "The Palindromes Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Anna,Civic,Kayak,level,Madam,Mom,Noon,171,Racecar,radar,Redder,Refer,Repaper,373,Rotor,Sagas,Solos,Stats,Tenet,Wow,Don't nod.,I did, did I?,My gym,Red rum, sir, is murder,Step on no pets,Top spot,Was it a cat I saw?,Eva, can I see bees in a cave?,No lemon, no melon,17171"
+      ]
+    },
+    "allPalindromes": {
+      "$id": "/properties/allPalindromes",
+      "type": "boolean",
+      "title": "The Allpalindromes Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "numericPalindromes": {
+      "$id": "/properties/numericPalindromes",
+      "type": "string",
+      "title": "The Numericpalindromes Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "171|373|17171"
+      ]
+    },
+    "containsNumericPalindromes": {
+      "$id": "/properties/containsNumericPalindromes",
+      "type": "boolean",
+      "title": "The Containsnumericpalindromes Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    }
+  }
+}

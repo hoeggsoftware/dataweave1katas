@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <mule xmlns:assert-object-equals="http://www.mulesoft.org/schema/mule/assert-object-equals"
 	
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -15,16 +14,16 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
 http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd">
     <munit:config name="munit" doc:name="MUnit configuration"/>
     <spring:beans>
-        <spring:import resource="classpath:exercise8.xml"/>
+        <spring:import resource="classpath:exercise12.xml"/>
     </spring:beans>
-    <munit:test name="exercise8Test" description="MUnit Test">
-        <set-payload value="#[getResource('input/list_of_states.json').asStream()]" doc:name="Set Payload"/>
-        <flow-ref name="exercise8Flow" doc:name="exercise8Flow"/>
+    <munit:test name="exercise12Test" description="MUnit Test">
+        <set-payload value="#[getResource('input/potential_palindromes.json').asStream()]" doc:name="Set Payload"/>
+        <flow-ref name="exercise12Flow" doc:name="exercise12Flow"/>
         <mock:verify-call messageProcessor="dw:transform-message" times="1" doc:name="Verify Call">
             <mock:with-attributes>
                 <mock:with-attribute name="doc:name" whereValue="Transform Message"/>
             </mock:with-attributes>
         </mock:verify-call>
-        <assert-object-equals:compare-objects expected-ref="#[getResource('output/exercise8-out.json').asStream()]" doc:name="Assert Object Equals"/>
+        <assert-object-equals:compare-objects expected-ref="#[getResource('output/exercise12-out.json').asStream()]" doc:name="Assert Object Equals"/>
     </munit:test>
 </mule>

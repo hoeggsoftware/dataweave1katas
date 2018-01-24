@@ -18,7 +18,7 @@ http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/mu
         <spring:import resource="classpath:exercise10.xml"/>
     </spring:beans>
     <munit:test name="exercise10Test" description="MUnit Test">
-        <set-payload value="#[getResource('input/list_of_states.json').asStream()]" doc:name="Set Payload" mimeType="application/xml"/>
+        <set-payload value="#[getResource('input/list_of_states.json').asStream()]" doc:name="Set Payload"/>
         <flow-ref name="exercise10Flow" doc:name="exercise10Flow"/>
         <mock:verify-call messageProcessor="dw:transform-message" times="1" doc:name="Verify Call">
             <mock:with-attributes>

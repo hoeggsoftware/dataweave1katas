@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "palindromes"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "exercise12out"
+        }
+    },
+    "id": "8d6d6387-af45-4ebd-bc8f-64e70adf236c",
+    "version": "5.2.0.0"
+}

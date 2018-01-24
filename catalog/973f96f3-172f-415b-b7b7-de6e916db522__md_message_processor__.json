@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "list_of_states_dupes"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "11out"
+        }
+    },
+    "id": "973f96f3-172f-415b-b7b7-de6e916db522",
+    "version": "5.2.0.0"
+}

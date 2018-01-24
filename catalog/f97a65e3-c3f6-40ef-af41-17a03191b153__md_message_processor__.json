@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "fizz_buzz"
+        }
+    },
+    "id": "f97a65e3-c3f6-40ef-af41-17a03191b153",
+    "version": "5.2.0.0"
+}

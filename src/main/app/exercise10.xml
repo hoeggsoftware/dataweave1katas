@@ -7,7 +7,7 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     <sub-flow name="exercise10Flow">
-        <dw:transform-message doc:name="Transform Message" metadata:id="121b9e3a-5f0f-4af0-b157-55ca0dfefb9c">
+        <dw:transform-message doc:name="Transform Message" metadata:id="c39cb303-6d8b-4b54-9d73-8867c8d41c05">
             <dw:input-payload mimeType="application/json" doc:sample="input/list_of_states.json"/>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json

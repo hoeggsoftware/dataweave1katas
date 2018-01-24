@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "national_championship_in"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "exercise7out"
+        }
+    },
+    "id": "3bc3bc43-231a-420c-8e44-f7e34e8afe4d",
+    "version": "5.2.0.0"
+}

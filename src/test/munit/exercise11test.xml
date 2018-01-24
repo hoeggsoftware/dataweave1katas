@@ -25,6 +25,6 @@ http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/mu
                 <mock:with-attribute name="doc:name" whereValue="Transform Message"/>
             </mock:with-attributes>
         </mock:verify-call>
-        <assert-object-equals:compare-objects expected-ref="#[getResource('output/exercise11-out.json').asStream()]" doc:name="Assert Object Equals"/>
+        <assert-object-equals:compare-objects expected-ref="#[getResource('output/exercise11-out.json').asStream()]" doc:name="Assert Object Equals" checkMapOrder="true"/>
     </munit:test>
 </mule>

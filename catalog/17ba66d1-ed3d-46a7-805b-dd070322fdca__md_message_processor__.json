@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "even_odds_primes"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "15out"
+        }
+    },
+    "id": "17ba66d1-ed3d-46a7-805b-dd070322fdca",
+    "version": "5.2.0.0"
+}

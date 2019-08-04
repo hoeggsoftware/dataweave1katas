@@ -5,7 +5,7 @@ https://docs.mulesoft.com/mule-user-guide/v/3.9/dataweave-operators
 say Hello, World!
 
 ## Excercise 2
-Given the src/test/resources/input/exercise2-in.json, produce output as xml that capitalizes the first and last name. Also, make the state abreviation all upper case. 
+Given the src/test/resources/input/exercise2-in.json, produce output as xml that capitalizes the first and last name. Also, make the state abbreviation all upper case. 
 
 See src/test/resources/output/exercise2-out.xml for expected output.
 
